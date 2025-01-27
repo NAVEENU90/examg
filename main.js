@@ -114,3 +114,13 @@ ScrollReveal().reveal(".login__switch", {
   delay: 800,
 });
 
+//GS Button
+const getStartedBtn = document.querySelector(".cta");
+
+const hoverSound = new Audio("assets/hover-sound.mp3");
+
+getStartedBtn.addEventListener("mouseenter", () => {
+  hoverSound.currentTime = 0; // Restart sound on each hover
+  hoverSound.play();
+});
+

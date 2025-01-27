@@ -60,7 +60,7 @@ nav {
 
 .nav__logo img {
   display: flex;
-  max-width: 36px;
+  max-width: 60px;
 }
 
 .nav__logo span {
@@ -120,9 +120,11 @@ nav {
 }
 
 .header__content {
+  margin-left: 17px;
   overflow: hidden;
   text-align: center;
 }
+
 
 .header__content h2 {
   position: relative;
@@ -148,6 +150,7 @@ nav {
 }
 
 .header__content h1 {
+  margin-left: 16px;
   font-size: 3.2rem; /* Adjusted size */
   font-weight: 600;
   color: var(--white);
@@ -155,6 +158,7 @@ nav {
   margin-bottom: 0.5rem; /* Added spacing between h1 and h2 */
 }
 .subtitle {
+  margin-left: 16px;
   font-size: 0.5rem; /* Smaller subtitle size */
   color: var(--primary-color);
   margin-bottom: 1rem; /* Space below the subtitle */
@@ -162,6 +166,7 @@ nav {
 
 
 .h1__span-1 {
+  margin-left: 16px;
   margin-top: -1rem;
   font-size: 0.3rem;
   color: var(--primary-color);
@@ -173,28 +178,98 @@ nav {
 }
 
 .header__content p {
+  margin-left: 16px;
   margin-bottom: 2rem;
   color: var(--text-light);
 }
 
-.header__content .btn {
-  padding: 0.75rem 1.5rem;
-  outline: none;
+/* From Uiverse.io by liceajj */ 
+.cta {
+  margin-left: 16px;
+  display: flex;
+  padding: 6px 12px;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 19px;
+  color: white;
+  background: #1179ce;
+  transition: 1s;
+  box-shadow: 6px 6px 0 black;
+  transform: skewX(-15deg);
   border: none;
-  font-size: 1rem;
-  color: var(--white);
-  background-color: var(--primary-color);
-  border-radius: 5rem;
-  transition: 0.3s;
-  cursor: pointer;
 }
 
-.header__content .btn:hover {
-  color: var(--primary-color);
-  background-color: var(--white);
+.cta:focus {
+  outline: none;
 }
+
+.cta:hover {
+  transition: 0.5s;
+  box-shadow: 10px 10px 0 #869da6;
+}
+
+.cta .second {
+  transition: 0.5s;
+  margin-right: 0px;
+}
+
+.cta:hover .second {
+  transition: 0.5s;
+  margin-right: 45px;
+}
+
+.span {
+  transform: skewX(15deg);
+}
+
+.second {
+  width: 20px;
+  margin-left: 30px;
+  position: relative;
+  top: 12%;
+}
+
+.one {
+  transition: 0.4s;
+  transform: translateX(-60%);
+}
+
+.two {
+  transition: 0.5s;
+  transform: translateX(-30%);
+}
+
+.cta:hover .three {
+  animation: color_anim 1s infinite 0.2s;
+}
+
+.cta:hover .one {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.6s;
+}
+
+.cta:hover .two {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.4s;
+}
+
+@keyframes color_anim {
+  0% {
+    fill: white;
+  }
+
+  50% {
+    fill: #2768b3;
+  }
+
+  100% {
+    fill: white;
+  }
+}
+
 
 .socials {
+  margin-left: 16px;
   padding-block: 2rem 4rem;
   display: flex;
   align-items: center;
@@ -212,6 +287,7 @@ nav {
 }
 
 .header__bar {
+  margin-left: 16px;
   font-size: 0.9rem;
   color: var(--text-light);
 }
@@ -404,7 +480,7 @@ nav {
 }
 
 .login__switch button {
-  background: none;
+  background:none;
   color: var(--primary-color);
   font-weight: 600;
   cursor: pointer;
@@ -500,9 +576,10 @@ nav {
 
 /* General page style */
 .about-header {
-  text-align: center;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align:center;
   padding: 4rem 1rem;
-  background-color: transparent; /* Removed the red background */
+  background-color: transparent;
   color: var(--primary-color);
 }
 
@@ -530,6 +607,7 @@ nav {
 }
 
 .developer-card {
+  margin-top: -5rem;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   border-radius: 10px;
